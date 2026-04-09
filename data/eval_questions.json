@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What did Andrew NG say about the biggest bottlenecks in AI on the Twenty Minute VC?",
+    "ground_truth": "Andrew NG discussed AI's rapid evolution, productivity loss from context switching, and the need to shift from consuming to building AI.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 2,
+    "question": "What is Dreamer and what approach does it take to agent development according to Latent Space?",
+    "ground_truth": "Dreamer is a Personal Agent OS that takes a 'taste'-driven design approach where human creativity and intuition guide agent-based software development, with multi-agent workflow collaboration.",
+    "category": "specific_product"
+  },
+  {
+    "id": 3,
+    "question": "What did Terence Tao discuss about AI's impact on mathematics on the Dwarkesh Podcast?",
+    "ground_truth": "Terence Tao explored how AI is reshaping mathematics, shifting mathematicians from routine computation to higher-level problem-solving and the adaptability required for mathematical progress.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 4,
+    "question": "What were the key announcements from Amazon Reinvent 2024 regarding AI, according to The AI Breakdown?",
+    "ground_truth": "Amazon launched AI Agents, announced Trainium 3 Ultra and Trainium 4 chips, and introduced AI Factories Service for specialized AI computing.",
+    "category": "specific_event"
+  },
+  {
+    "id": 5,
+    "question": "What is SambaNova's approach to AI computing infrastructure as discussed on Tech Disruptors?",
+    "ground_truth": "SambaNova emphasizes energy efficiency and data sovereignty in AI computing, focusing on foundation models with a privacy-first approach.",
+    "category": "specific_company"
+  },
+  {
+    "id": 6,
+    "question": "What did Grady Booch say about the 'third golden age of software engineering' on The Pragmatic Engineer?",
+    "ground_truth": "Grady Booch explored AI anxieties through the lens of historical technological shifts, discussing systems theory, agent programming, and how this era parallels previous transformations.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 7,
+    "question": "What did Alex Blania discuss about 'proof of human' on the a16z Podcast?",
+    "ground_truth": "Alex Blania discussed verifying users are human beings, the challenges from AI bots, and implications for social media and democracy through World's identity network.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 8,
+    "question": "What were the findings from Lenny's large-scale AI productivity survey?",
+    "ground_truth": "AI tools are significantly boosting workplace productivity across roles (PMs, engineers, designers, founders), with widespread adoption and strong market fit for AI tools.",
+    "category": "specific_research"
+  },
+  {
+    "id": 9,
+    "question": "What did Tom Tunguz from Theory Ventures say about the state of data and AI on Dataframed?",
+    "ground_truth": "Tom Tunguz discussed conversational AI, AI-specific programming languages, and automated data engineering as key trends in the data and AI landscape.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 10,
+    "question": "What is Kumo's approach to time series forecasting as covered on The Data Exchange?",
+    "ground_truth": "Kumo uses transformer models trained on relational data for time series forecasting, with a focus on synthetic data generation and relational time series patterns.",
+    "category": "specific_company"
+  },
+  {
+    "id": 11,
+    "question": "What did Dan Sundheim discuss about investment philosophy on Invest Like the Best?",
+    "ground_truth": "Dan Sundheim emphasized a 5-10 year investment horizon, the importance of leadership qualities, and geopolitical risk assessment particularly around Taiwan/China.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 12,
+    "question": "What is Decagon and how does it approach LLMs for enterprises, according to Invest Like the Best?",
+    "ground_truth": "Decagon builds specialized AI infrastructure for enterprises using LLMs, focusing on data governance, security, and enterprise-grade deployment of large language models.",
+    "category": "specific_company"
+  },
+  {
+    "id": 13,
+    "question": "What did Werner Vogels predict about technology trends for 2026 on the AWS Podcast?",
+    "ground_truth": "Werner Vogels emphasized human-centered innovation, the importance of diversity and education, and cybersecurity challenges from quantum computing.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 14,
+    "question": "What is Bauplan's 'Git for Data' concept as discussed on The Joe Reis Show?",
+    "ground_truth": "Bauplan proposes a new lakehouse architecture for AI agents, applying Git-like version control concepts to data management.",
+    "category": "specific_company"
+  },
+  {
+    "id": 15,
+    "question": "What did Tim Ferriss say about why he walked away from angel investing on the Twenty Minute VC?",
+    "ground_truth": "Tim Ferriss discussed holistic success beyond financial returns, the difference between emulation and understanding, and burnout and mental health in the context of walking away from angel investing after Uber.",
+    "category": "specific_guest"
+  },
+  {
+    "id": 16,
+    "question": "What were the key topics in the Hard Fork episode about the 'Great AI Build-Out'?",
+    "ground_truth": "The episode covered the massive AI infrastructure build-out, H-1B visa debates, and TikTok 'rapture talk' phenomenon fueling social media misinformation and collective anxiety.",
+    "category": "specific_episode"
+  },
+  {
+    "id": 17,
+    "question": "How is Harvey scaling AI for legal services according to the No Priors podcast?",
+    "ground_truth": "Harvey is developing AI-powered tools for legal services, focusing on scaling AI solutions for next-generation law firms with rapid growth.",
+    "category": "specific_company"
+  },
+  {
+    "id": 18,
+    "question": "What did the Fray paper discuss about concurrency testing on the Disseminate podcast?",
+    "ground_truth": "Fray is an efficient general-purpose concurrency testing tool for JVM, addressing the disconnect between academic concurrency testing research and practical software development needs.",
+    "category": "specific_research"
+  },
+  {
+    "id": 19,
+    "question": "What is the Netflix/Warner Bros. Discovery acquisition analysis from Big Technology Podcast?",
+    "ground_truth": "The podcast critically examined the Netflix/WBD acquisition trend alongside prediction markets and data-driven decision making in the tech industry.",
+    "category": "specific_event"
+  },
+  {
+    "id": 20,
+    "question": "What did Adobe's CFO reveal about the company's AI strategy on Tech Disruptors?",
+    "ground_truth": "Adobe's CFO detailed the company's strong financial health, share repurchase program, and growth strategy centered on AI accelerating Creative Cloud.",
+    "category": "specific_company"
+  }
+]
