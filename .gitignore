@@ -5,4 +5,5 @@ dist/
 *.egg-info/
 .env
 data/embeddings/
+data/chroma/
 .pytest_cache/
