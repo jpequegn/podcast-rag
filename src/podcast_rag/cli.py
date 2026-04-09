@@ -30,6 +30,7 @@ def query(
     k: int = typer.Option(5, "--top-k", "-k", help="Number of sources to retrieve"),
     no_expansion: bool = typer.Option(False, "--no-expansion", help="Disable query expansion"),
     no_rerank: bool = typer.Option(False, "--no-rerank", help="Disable LLM reranking"),
+    search_mode: str = typer.Option("vector", "--search-mode", "-m", help="Search mode: vector, bm25, or hybrid"),
 ):
     """Ask a question and get a cited answer from podcast episodes."""
     from podcast_rag.rag import query as rag_query
@@ -43,6 +44,7 @@ def query(
             where=where,
             use_expansion=not no_expansion,
             use_rerank=not no_rerank,
+            search_mode=search_mode,
         )
 
     # Sources
