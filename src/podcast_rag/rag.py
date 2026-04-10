@@ -157,16 +157,30 @@ def query(
     where: dict | None = None,
     use_expansion: bool = True,
     use_rerank: bool = True,
+    search_mode: str = "vector",
 ) -> RAGResult:
     """Full RAG pipeline: retrieve → rerank → generate with citations."""
-    store = VectorStore()
-
-    if use_expansion:
-        episodes = diversified_retrieve(store, question, k=k * 4, where=where)
-        expanded = expand_query(question)
-    else:
-        episodes = retrieve(store, question, k=k * 4 if use_rerank else k, where=where)
+    if search_mode in ("bm25", "hybrid"):
+        from podcast_rag.hybrid import HybridSearch
+        hybrid = HybridSearch(alpha=0.5)
+        scored = hybrid.search(question, k=k * 4 if use_rerank else k, mode=search_mode, where=where if search_mode == "hybrid" else None)
+        episodes = [
+            Episode(
+                episode_id=s.episode_id, podcast=s.podcast, date=s.date,
+                key_topics=s.key_topics, themes=s.themes,
+                document=s.document, distance=1.0 - s.hybrid_score,
+            )
+            for s in scored
+        ]
         expanded = []
+    else:
+        store = VectorStore()
+        if use_expansion:
+            episodes = diversified_retrieve(store, question, k=k * 4, where=where)
+            expanded = expand_query(question)
+        else:
+            episodes = retrieve(store, question, k=k * 4 if use_rerank else k, where=where)
+            expanded = []
 
     if use_rerank and len(episodes) > k:
         episodes = rerank(question, episodes, k=k)
